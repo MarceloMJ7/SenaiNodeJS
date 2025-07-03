@@ -29,7 +29,7 @@ app.get('/deletar/:id', (req, res) => {
             return val;
         }
     });
-    res.render('index', {tasksList: tasks});
+    res.redirect('/');
 });
 
 app.listen(5000, () => {
